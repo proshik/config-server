@@ -16,7 +16,10 @@ env:
     - COMMIT=${TRAVIS_COMMIT::8}
 
 after_success:
-  - bash <(curl -s https://codecov.io/bash)
+  - export DOCKER_EMAIL=[secure]
+  - export DOCKER_USER=[secure]
+  - export DOCKER_PASS=[secure]
+
   - docker login -u $DOCKER_USER -p $DOCKER_PASS hub.docker.com
 
 # TAG
