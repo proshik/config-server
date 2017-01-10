@@ -16,15 +16,14 @@ env:
     - COMMIT=${TRAVIS_COMMIT::8}
 
 after_success:
-  docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
 
 # TAG
-
   - export TAG=`if [ "$TRAVIS_BRANCH" == "master" ]; then echo "latest"; else echo $TRAVIS_BRANCH ; fi`
 
 # CONFIG
   - export CONFIG=proshik/config-server
 
+  - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
   - docker build -t $CONFIG:$COMMIT .
   - docker tag $CONFIG:$COMMIT $CONFIG:$TAG
   - docker push $CONFIG
