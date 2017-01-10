@@ -1,6 +1,6 @@
 # Config server
 
-[![Build Status](https://api.travis-ci.org/proshik/thinkclearly.svg?branch=master)](https://travis-ci.org/proshik/config-server)
+[![Build Status](https://api.travis-ci.org/proshik/config-server.svg?branch=master)](https://travis-ci.org/proshik/config-server)
 [![codecov](https://codecov.io/gh/proshik/config-server/branch/master/graph/badge.svg)](https://codecov.io/gh/proshik/config-server)
 
  Spring Cloud Config provides server and client-side support for externalized configuration in a distributed system.
