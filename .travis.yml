@@ -16,11 +16,7 @@ env:
     - COMMIT=${TRAVIS_COMMIT::8}
 
 after_success:
-  - export DOCKER_EMAIL=[secure]
-  - export DOCKER_USER=[secure]
-  - export DOCKER_PASS=[secure]
-
-  - docker login -u $DOCKER_USER -p $DOCKER_PASS
+  docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
 
 # TAG
 
