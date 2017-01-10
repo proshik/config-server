@@ -20,9 +20,10 @@ after_success:
   - export DOCKER_USER=[secure]
   - export DOCKER_PASS=[secure]
 
-  - docker login -u $DOCKER_USER -p $DOCKER_PASS hub.docker.com
+  - docker login -u $DOCKER_USER -p $DOCKER_PASS
 
 # TAG
+
   - export TAG=`if [ "$TRAVIS_BRANCH" == "master" ]; then echo "latest"; else echo $TRAVIS_BRANCH ; fi`
 
 # CONFIG
