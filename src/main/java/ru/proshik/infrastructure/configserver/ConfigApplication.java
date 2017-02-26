@@ -1,4 +1,4 @@
-package ru.proshik.infractructure.config_server;
+package ru.proshik.infrastructure.configserver;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
