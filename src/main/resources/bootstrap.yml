@@ -12,7 +12,6 @@ spring:
       server:
         git:
           uri: ${CONFIG_SERVICE_CSV_CONFIG_REPO_URL}
-          search-paths: ${CONFIG_SERVICE_POSTFIX_APPLICATION}
 
 logging:
   level:
