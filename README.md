@@ -13,6 +13,8 @@ CONFIG_SERVICE_PASSWORD - password for connect from external services
 CONFIG_SERVICE_USERNAME - username for connect from external services
 CONFIG_SERVICE_CSV_CONFIG_REPO_URL - remote git repo. Emaple: https://github.com/proshik/config-repo (If ssh key not added to git hosting, then this not work for private(protected)repository)
 CONFIG_SERVICE_POSTFIX_APPLICATION - application postfix for get access to configuration from csv repository. Example: account-service
+CONFIG_SERVICE_CSV_USERNAME - username in CVS system
+CONFIG_SERVICE_CSV_PASSWORD - password for CMS system
 ```
 
 ## Example
