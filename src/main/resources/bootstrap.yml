@@ -12,7 +12,9 @@ spring:
       server:
         git:
           uri: ${CONFIG_SERVICE_CSV_CONFIG_REPO_URL}
+          username: ${CONFIG_SERVICE_CSV_USERNAME}
+          password: ${CONFIG_SERVICE_CSV_PASSWORD}
 
 logging:
   level:
-    org.springframework: INFO
+    org.springframework: DEBUG

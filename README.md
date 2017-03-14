@@ -15,7 +15,17 @@ CONFIG_SERVICE_CSV_CONFIG_REPO_URL - remote git repo. Emaple: https://github.com
 CONFIG_SERVICE_POSTFIX_APPLICATION - application postfix for get access to configuration from csv repository. Example: account-service
 ```
 
-### SSH access to GitHub or GitLab
+## Example
+
+```
+for environment-variable:
+CONFIG_SERVICE_PORT = 8888
+
+url:
+http://localhost:8888/<spring.applicaion.name>.yml
+```
+
+## SSH access to GitHub or GitLab
 
 [GitLab docs](https://gitlab.com/help/ssh/README#ssh)
 
